@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://wbqofgvmtrbc"]
+
+[ext_resource type="Script" uid="uid://b40u6v2wvp1l0" path="res://mob_boss.gd" id="1_ygnj2"]
+[ext_resource type="Texture2D" uid="uid://dufecygrv6v36" path="res://Badgre.png" id="2_7ks8f"]
+[ext_resource type="Texture2D" uid="uid://bu7ysxsnvjymr" path="res://gold_crown_on_a_transparent_background__by_prussiaart_dclmy10-fullview.png" id="3_tunq0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dy6sc"]
+size = Vector2(294, 172)
+
+[node name="Mob Boss" type="Area2D" unique_id=1971822920 groups=["Mob"]]
+script = ExtResource("1_ygnj2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=728170593]
+position = Vector2(-19.034554, 29.000004)
+scale = Vector2(0.07172414, 0.07172414)
+texture = ExtResource("2_7ks8f")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=938062823]
+position = Vector2(-1098.3383, -1011.62756)
+scale = Vector2(2.1750476, 0.87090945)
+texture = ExtResource("3_tunq0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1167499073]
+position = Vector2(-19, 24)
+shape = SubResource("RectangleShape2D_dy6sc")

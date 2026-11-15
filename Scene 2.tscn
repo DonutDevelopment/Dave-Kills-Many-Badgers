@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d3mwyvwv1fv2p"]
+
+[ext_resource type="PackedScene" uid="uid://cawdi8lnju7yh" path="res://floor.tscn" id="2_0f2uu"]
+[ext_resource type="PackedScene" uid="uid://dlmnfyh7c740s" path="res://dave.tscn" id="3_2fspr"]
+[ext_resource type="PackedScene" uid="uid://bhfo5swlbd1gb" path="res://mob.tscn" id="4_ngyt8"]
+[ext_resource type="PackedScene" uid="uid://cyk8825m20f0s" path="res://leave.tscn" id="5_1ecs8"]
+
+[node name="Scene 2" type="Node2D" unique_id=1810180135]
+position = Vector2(91, 84)
+
+[node name="Floor" parent="." unique_id=438595871 instance=ExtResource("2_0f2uu")]
+position = Vector2(-84, -101)
+
+[node name="Dave" parent="." unique_id=1850491928 instance=ExtResource("3_2fspr")]
+position = Vector2(-28, 203)
+
+[node name="Mob" parent="." unique_id=1971822920 instance=ExtResource("4_ngyt8")]
+position = Vector2(869, 431)
+
+[node name="Mob2" parent="." unique_id=439132987 instance=ExtResource("4_ngyt8")]
+position = Vector2(314, 266)
+
+[node name="Mob3" parent="." unique_id=364586473 instance=ExtResource("4_ngyt8")]
+position = Vector2(641, 56)
+
+[node name="Mob4" parent="." unique_id=2033917271 instance=ExtResource("4_ngyt8")]
+position = Vector2(86, 434)
+
+[node name="Mob5" parent="." unique_id=1766964765 instance=ExtResource("4_ngyt8")]
+position = Vector2(553, 376)
+
+[node name="Mob6" parent="." unique_id=2015699225 instance=ExtResource("4_ngyt8")]
+position = Vector2(912, 196)
+
+[node name="Mob7" parent="." unique_id=961583140 instance=ExtResource("4_ngyt8")]
+position = Vector2(244, 22)
+
+[node name="Mob8" parent="." unique_id=135705664 instance=ExtResource("4_ngyt8")]
+position = Vector2(970, -3)
+
+[node name="leave" parent="." unique_id=1672052440 groups=["leave"] instance=ExtResource("5_1ecs8")]
+position = Vector2(-87, -75)

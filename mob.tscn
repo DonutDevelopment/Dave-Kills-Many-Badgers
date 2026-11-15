@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bhfo5swlbd1gb"]
+
+[ext_resource type="Texture2D" uid="uid://dufecygrv6v36" path="res://Badgre.png" id="1_dy6sc"]
+[ext_resource type="Script" uid="uid://jw60rdfcqval" path="res://mob.gd" id="1_nokgg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb8jo"]
+size = Vector2(146, 78)
+
+[node name="Mob" type="Area2D" unique_id=1971822920 groups=["Mob"]]
+script = ExtResource("1_nokgg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=728170593]
+position = Vector2(-8.0000305, 22.999985)
+scale = Vector2(0.034597695, 0.034597695)
+texture = ExtResource("1_dy6sc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1940173271]
+position = Vector2(-9, 23)
+shape = SubResource("RectangleShape2D_pb8jo")

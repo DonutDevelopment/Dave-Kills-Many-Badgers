@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://buvoxkpjj2c3b"]
+
+[ext_resource type="PackedScene" uid="uid://dlmnfyh7c740s" path="res://dave.tscn" id="2_haag0"]
+[ext_resource type="PackedScene" uid="uid://cawdi8lnju7yh" path="res://floor.tscn" id="3_bw0s8"]
+[ext_resource type="PackedScene" uid="uid://wbqofgvmtrbc" path="res://mob_boss.tscn" id="4_if0vl"]
+[ext_resource type="PackedScene" uid="uid://bhfo5swlbd1gb" path="res://mob.tscn" id="5_cnnu8"]
+[ext_resource type="PackedScene" uid="uid://cyk8825m20f0s" path="res://leave.tscn" id="6_dpktl"]
+
+[node name="Scene 3" type="Node2D" unique_id=1498615336]
+position = Vector2(-11, 0)
+
+[node name="playermamn" parent="." unique_id=694489183 instance=ExtResource("2_haag0")]
+position = Vector2(193, 343)
+
+[node name="Floor" parent="." unique_id=438595871 instance=ExtResource("3_bw0s8")]
+z_index = -1
+position = Vector2(33, -4)
+
+[node name="Mob Boss" parent="." unique_id=1971822920 instance=ExtResource("4_if0vl")]
+position = Vector2(1023, 310)
+
+[node name="Mob" parent="." unique_id=1876513657 instance=ExtResource("5_cnnu8")]
+position = Vector2(770, 125)
+
+[node name="Mob2" parent="." unique_id=1775960862 instance=ExtResource("5_cnnu8")]
+position = Vector2(828, 476)
+
+[node name="Mob3" parent="." unique_id=566071081 instance=ExtResource("5_cnnu8")]
+position = Vector2(613, 302)
+
+[node name="Mob4" parent="." unique_id=714234041 instance=ExtResource("5_cnnu8")]
+position = Vector2(453, 153)
+
+[node name="Mob5" parent="." unique_id=585943092 instance=ExtResource("5_cnnu8")]
+position = Vector2(420, 435)
+
+[node name="leave" parent="." unique_id=1672052440 groups=["leave"] instance=ExtResource("6_dpktl")]
+position = Vector2(15, -7)

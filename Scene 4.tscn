@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ci3ysgeiyeia4"]
+
+[ext_resource type="PackedScene" uid="uid://cawdi8lnju7yh" path="res://floor.tscn" id="1_eacqt"]
+[ext_resource type="PackedScene" uid="uid://cyk8825m20f0s" path="res://leave.tscn" id="2_skdji"]
+[ext_resource type="PackedScene" uid="uid://dlmnfyh7c740s" path="res://dave.tscn" id="3_gm4hr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pb8jo"]
+font_size = 150
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1880103459]
+position = Vector2(5, -1)
+
+[node name="Floor" parent="." unique_id=1322137678 instance=ExtResource("1_eacqt")]
+position = Vector2(3, -14)
+
+[node name="leave" parent="." unique_id=1672052440 instance=ExtResource("2_skdji")]
+
+[node name="playermamn" parent="." unique_id=694489183 instance=ExtResource("3_gm4hr")]
+position = Vector2(591, 506)
+
+[node name="Label" type="Label" parent="." unique_id=1980469272]
+offset_left = 224.0
+offset_top = 57.0
+offset_right = 930.0
+offset_bottom = 262.0
+text = "GGs mate"
+label_settings = SubResource("LabelSettings_pb8jo")

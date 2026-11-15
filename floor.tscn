@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cawdi8lnju7yh"]
+
+[ext_resource type="Texture2D" uid="uid://ctfbeku14ispe" path="res://forestfloor.jpg" id="1_oj3tl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb8jo"]
+size = Vector2(2775, 1423.5)
+
+[node name="Floor" type="StaticBody2D" unique_id=1322137678]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=963696520]
+position = Vector2(230, 481)
+scale = Vector2(5, 5)
+texture = ExtResource("1_oj3tl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1200456205]
+position = Vector2(222, -706)
+shape = SubResource("RectangleShape2D_pb8jo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=189535994]
+position = Vector2(-1381, 267)
+shape = SubResource("RectangleShape2D_pb8jo")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=503313369]
+position = Vector2(62, 1355)
+shape = SubResource("RectangleShape2D_pb8jo")
